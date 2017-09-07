@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="356px" height="192px" viewBox="0 0 356 192" enable-background="new 0 0 356 192" xml:space="preserve">
+<g id="Layer_1_1_">
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" x="-9.5" y="-8.5" width="375" height="202"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<rect clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" width="356" height="192"/>
+		</g>
+	</g>
+	<line fill="none" stroke="#000000" x1="67.5" y1="42.33" x2="356" y2="192"/>
+	<line fill="none" stroke="#000000" x1="0" y1="192" x2="356" y2="0"/>
+	<rect x="347.125" y="28.33" fill="none" stroke="#000000" width="8.875" height="8"/>
+	<rect x="347.125" y="47.33" fill="none" stroke="#000000" width="8.875" height="8"/>
+	<rect x="347.125" y="66.33" fill="none" stroke="#000000" width="8.875" height="8"/>
+</g>
+<g id="Layer_2">
+</g>
+<g id="Layer_3">
+</g>
+</svg>

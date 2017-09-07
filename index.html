@@ -11,6 +11,20 @@
   <title>Library Library</title>
   <link href="reset.css" rel="stylesheet">
   <link href="global.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+      $("#line-1 .text").hover(function () {
+         $("#line-1").toggleClass("line-node-red");
+      });
+      $("#line-2 .text").hover(function () {
+         $("#line-2").toggleClass("line-node-white");
+      });
+      $("#line-3 .text, #house .text").hover(function () {
+         $("#line-3, .house").toggleClass("line-node-white");
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -18,7 +32,38 @@
 
     <!-- #### KABEL BOX BEGIN #### -->
     <div class="kabel-box">
-      Library Library
+      <!-- <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      	 x="0px" y="0px" width="356px" height="201.33px" viewBox="0 0 356 201.33" xml:space="preserve">
+      <g>
+      	<rect x="0.5" y="0.5" fill="none" width="355" height="191"/>
+      	<path d="M-0.5,192.5h357v-193h-357V192.5z M0.5,0.5h355v191H0.5V0.5z"/>
+      </g>
+      <line fill="none" stroke="#000000" x1="160.5" y1="183.33" x2="160.5" y2="201.33"/>
+      <line fill="none" stroke="#000000" x1="203.5" y1="183.33" x2="203.5" y2="201.33"/>
+      <line fill="none" stroke="#000000" x1="0" y1="0" x2="356" y2="192"/>
+      <line fill="none" stroke="#000000" x1="0" y1="192" x2="356" y2="0"/>
+      </svg> -->
+      <svg version="1.1" id="kabel-box" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 width="400px" viewBox="0 0 356 192" enable-background="new 0 0 356 192" xml:space="preserve">
+      <g>
+      	<defs>
+      		<rect id="SVGID_1_" x="-9.5" y="-8.5" width="375" height="202"/>
+      	</defs>
+      	<clipPath id="SVGID_2_">
+      		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+      	</clipPath>
+      	<rect clip-path="url(#SVGID_2_)" fill="none" stroke="#000000" width="356" height="192"/>
+      </g>
+      <line fill="none" stroke="#000000" x1="67.5" y1="42.33" x2="356" y2="192"/>
+      <line fill="none" stroke="#000000" x1="0" y1="192" x2="356" y2="0"/>
+      <rect x="347.125" y="28.33" fill="none" stroke="#000000" width="8.875" height="8"/>
+      <rect x="347.125" y="47.33" fill="none" stroke="#000000" width="8.875" height="8"/>
+      <rect x="347.125" y="66.33" fill="none" stroke="#000000" width="8.875" height="8"/>
+      </svg>
+
+      <div id="kabel-box-text">
+        <span style="color: #AD734B;">Li</span>br<span style="color: #454766;">ary</span> <span style="color: #226142;">Li</span><span style="color: #1F3D7D;">brary</span>
+      </div>
     </div>
     <!-- #### KABEL BOX END #### -->
 
@@ -38,7 +83,7 @@
         	c3.085-0.912,6-1.774,8.886-4.141c1.7-1.393,2.297-2.512,2.93-3.697c0.374-0.7,0.761-1.424,1.411-2.28
         	c0.881-1.159,1.972-2.106,3.128-3.109c1.779-1.543,3.619-3.14,4.589-5.552l-0.928-0.373C155.145,2.188,153.476,3.637,151.708,5.17z"
         	/>
-          <div class="text"># files</div>
+          <div class="text"><marquee><span id="Date"></span>&nbsp;<span id="hours"></span><span id="point">:</li><span id="min"></span><span id="point">:</span><span id="sec"></span></marquee></div>
         </svg>
     </div>
     <!-- #### LINE 1 END #### -->
@@ -99,25 +144,26 @@
       		c-1.028-0.789-2.065-1.562-3.11-2.313C180.448,56.409,179.189,55.858,177.938,55.285z"/>
       </g>
     </svg>
-    <div class="text">Appointments</div>
+    <div class="text"><a href="/appointments.html">Appointments</a></div>
   </div>
   <!-- #### LINE 3 + 4 END #### -->
 
   <!-- #### HOUSE BEGIN #### -->
-  <div id="house">
-    <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  	 x="0px" y="0px" width="114.176px" height="33.071px" viewBox="0 0 114.176 33.071" xml:space="preserve">
-      <g>
-      	<polygon fill="none" points="2.192,32.037 110.32,30.105 56.256,1.143 	"/>
-      	<path d="M56.24,0L0,32.137l0.257,0.934l113.919-2.034L56.484,0.13L56.24,0z M2.192,32.037L56.256,1.143l54.064,28.963L2.192,32.037
-      		z"/>
-      </g>
-    </svg>
-    <div class="text">[6] Roommates ‘compilers’</div>
-  </div>
+    <div id="house">
+        <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px" y="0px" width="114.176px" height="33.071px" viewBox="0 0 114.176 33.071" xml:space="preserve">
+          <g>
+            <polygon fill="none" points="2.192,32.037 110.32,30.105 56.256,1.143 	"/>
+            <path d="M56.24,0L0,32.137l0.257,0.934l113.919-2.034L56.484,0.13L56.24,0z M2.192,32.037L56.256,1.143l54.064,28.963L2.192,32.037
+              z"/>
+          </g>
+        </svg>
+        <div class="text">[6] Roommates</div>
+      </div>
   <!-- #### HOUSE END #### -->
 
   </div>
 </body>
+<script language="JavaScript" src="clock.js"></script>
 
 </html>
