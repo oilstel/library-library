@@ -157,7 +157,7 @@ p {
 }
 
 a#back {
-  background: url(/images/back-arrow.svg);
+  background: url(images/back-arrow.svg);
   background-size: 25px 80px;
   display: inline-block;
   height: 80px;
