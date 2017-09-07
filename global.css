@@ -92,6 +92,10 @@ a:hover {
   padding-top: 6px;
 }
 
+#line-1 .text span {
+  display: inline;
+}
+
 #line-1 .text:hover {
   color: #000000;
   background-color: #BEBF62;
